@@ -1,42 +1,38 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React, { useState, useEffect } from "react";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import NavDesktop from "./NavDesktop";
+import NavMobile from "./NavMobile";
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Header = ({ color }) => {
+    const [awayFromTop, toggleBackgroundColor] = useState(false);
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+    function scrollChange(e) {
+        const scrollTop =
+            window.pageYOffset !== undefined
+                ? window.pageYOffset
+                : (
+                      document.documentElement ||
+                      document.body.parentNode ||
+                      document.body
+                  ).scrollTop;
 
-export default Header
+        toggleBackgroundColor(scrollTop > 10);
+    }
+
+    useEffect(_ => {
+        window.addEventListener("scroll", scrollChange);
+
+        return _ => {
+            window.removeEventListener("scroll", scrollChange);
+        };
+    }, []);
+
+    return (
+        <header className={`${awayFromTop ? "fillBackground" : ""}`}>
+            <NavDesktop color={color} />
+            <NavMobile color={color} />
+        </header>
+    );
+};
+
+export default Header;
