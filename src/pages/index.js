@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 const IndexPage = () => (
     <Layout pageName="index">
         <SEO title="Home" />
-        <Banner bannerSrc="banner4" />
+        <Banner bannerSrc="bannerHome" />
     </Layout>
 );
 

@@ -12,7 +12,7 @@ const NavDesktop = ({ color }) => {
                     <Link to="/registry">Registry</Link>
                 </li>
             </ul>
-            <div className={`Title ${color}`}>
+            <div className={`Title`}>
                 <Link to="/">Lee & Hope</Link>
             </div>
             <ul className="menuList">

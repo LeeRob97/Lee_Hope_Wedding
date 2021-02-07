@@ -21,6 +21,7 @@ module.exports = {
             options: {
                 fonts: [
                     `Libre Caslon Display\:500,600,700,normal,lighter,bold,bolder,italic`,
+                    `Dancing Script\:500,600,700,normal,lighter,bold,bolder,italic`
                 ],
             },
         },
