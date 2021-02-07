@@ -1,0 +1,75 @@
+.pageContainer[data-page-id="Registry"] {
+	header {
+		.Title,
+		.menuList li {
+			color: @toupe;
+		}
+	}
+	.content {
+		font-family: 'Dancing Script', serif;
+		color: @grey;
+
+		.bannerContainer {
+			height: 780px;
+			width: 100%;
+		}
+
+		.wrapper {
+			padding: 3em;
+			& + .wrapper {
+				padding-top: 2em;
+			}
+
+			.header {
+				.larger {
+					font-size: 80px;
+                    text-align: center;
+					line-height: 150%;
+					@media (max-width: 625px) {
+						font-size: 70px;
+					}
+				}
+			}
+
+			.details {
+				.message {
+					text-align: center;
+					font-size: 40px;
+					padding: 1rem 0;
+					line-height: 150%;
+                    max-width: 800px;
+                    margin: auto;
+                
+
+					@media (max-width: 625px) {
+						font-size: 30px;
+					}
+				}
+
+                .registries {
+                    display: flex;
+                    flex-flow: wrap row;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2rem 0;
+
+                    .registry {
+                        font-size: 30px;
+                        padding: 1rem 2rem;
+                        background-color: @grey;
+                        color: white;
+                        box-shadow: none;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        border-radius: .40rem;
+
+                        & + .registry {
+                            margin-left: 1em;
+                        }
+                    }
+                }
+			}
+		}
+	}
+}
