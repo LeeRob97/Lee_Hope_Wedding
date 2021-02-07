@@ -1,0 +1,38 @@
+.pageContainer[data-page-id="RSVP"] {
+	header {
+		.Title,
+		.menuList li {
+			color: @toupe;
+		}
+	}
+	.content {
+		font-family: 'Dancing Script', serif;
+		color: @grey;
+
+		.bannerContainer {
+			height: 780px;
+			width: 100%;
+		}
+
+		.wrapper {
+			padding: 3em;
+			& + .wrapper {
+				padding-top: 2em;
+			}
+
+			.header {
+				.larger {
+					font-size: 80px;
+                    text-align: center;
+					line-height: 150%;
+					@media (max-width: 625px) {
+						font-size: 70px;
+					}
+				}
+			}
+
+			.details {
+			}
+		}
+	}
+}
