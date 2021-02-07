@@ -43,7 +43,6 @@ const Registry = _ => {
 					</div>
 				</div>
 			</div>
-			
 		</Layout>
 	)
 };

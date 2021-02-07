@@ -1,0 +1,61 @@
+.pageContainer[data-page-id="Wedding"] {
+	header {
+		.Title,
+		.menuList li {
+			color: @toupe;
+		}
+	}
+	.content {
+		font-family: 'Dancing Script', serif;
+		color: @grey;
+
+		.bannerContainer {
+			height: 780px;
+			width: 100%;
+		}
+
+		.wrapper {
+			padding: 3em;
+			& + .wrapper {
+				padding-top: 2em;
+			}
+
+			.header {
+				.smaller,
+				.larger{
+					text-align: center;
+					line-height: 150%;
+
+				}
+
+				.smaller {
+					font-size: 40px;
+
+					@media (max-width: 625px) {
+						font-size: 30px;
+					}
+				}
+
+				.larger {
+					font-size: 80px;
+					@media (max-width: 625px) {
+						font-size: 70px;
+					}
+				}
+			}
+
+			.details {
+				.info {
+					text-align: center;
+					font-size: 40px;
+					padding: 1rem 0;
+					line-height: 150%;
+
+					@media (max-width: 625px) {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+	}
+}
