@@ -15,16 +15,29 @@
 		}
 
 		.wrapper {
-			padding: 3em;
+			padding: 3em 5px;
 			& + .wrapper {
 				padding-top: 2em;
 			}
 
 			.header {
+				.smaller,
+				.larger{
+					text-align: center;
+					line-height: 150%;
+
+				}
+
+				.smaller {
+					font-size: 40px;
+
+					@media (max-width: 625px) {
+						font-size: 30px;
+					}
+				}
+
 				.larger {
 					font-size: 80px;
-                    text-align: center;
-					line-height: 150%;
 					@media (max-width: 625px) {
 						font-size: 70px;
 					}
@@ -32,6 +45,67 @@
 			}
 
 			.details {
+				margin-top: 3em;
+				#rsvpForm {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					max-width: 812px;
+					margin: auto;
+					border: 1px solid @grey;
+					padding: 3em 5px;
+
+					.inputField {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						width: 90%;
+
+						& + .inputField {
+							margin-top: 1em;
+						}
+
+						label {
+							font-size: 25px;
+							margin-bottom: 5px;
+							font-weight: 600;
+						}
+
+						input {
+							width: 100%;
+							border: 1px solid @grey;
+							padding: 5px 0;
+							text-indent: 5px;
+							font-size: 25px;
+							color: @grey;
+							transition: 0.4s;
+
+							&:active,
+							&:focus {
+								outline: none;
+								border-color: @red;
+							}
+						}
+
+						input[type="submit"] {
+							font-family: 'Dancing Script', serif;
+							background-color: inherit;
+							width: auto;
+							text-align: center;
+							padding: 5px 1em;
+							margin: auto;
+							text-indent: 0;
+							cursor: pointer;
+
+							&:hover,
+							&:active {
+								background-color: @red;
+								color: white;
+								border: 1px solid transparent;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

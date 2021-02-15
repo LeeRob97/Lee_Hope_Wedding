@@ -29,7 +29,7 @@ const Shower = _ => {
 						Central Baptist Church
 					</div>
 					<div className="info">
-						710 W Wise St, Bowie, TX 76230
+						<a href="http://maps.google.com/?q=710 W Wise St, Bowie, TX 76230" target="_blank" rel="noopener noreferrer">710 W Wise St, Bowie, TX 76230</a>
 					</div>
 					<div className="info">
 						<Link to="/registry">View Registry</Link>
