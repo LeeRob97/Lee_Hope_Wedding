@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+import ReCAPTCHA from "react-google-recaptcha";
+
 import Banner from "../components/Banner";
 
 const RSVP = _ => {
@@ -26,7 +28,9 @@ const RSVP = _ => {
 						method="post"
 						name="WeddingRSVP"
 						data-netlify="true"
+						data-netlify-recaptcha="true"
 						netlify-honeypot="bot-field"
+						action="/"
 					>
 						<input type="hidden" name="bot-field" />
 						<input type="hidden" name="form-name" value="WeddingRSVP" />
@@ -45,6 +49,9 @@ const RSVP = _ => {
 						<div className="inputField">
 							<label>Email (To be reached at for any changes)</label>
 							<input name="email" type="email"/>
+						</div>
+						<div className="inputField">
+							<ReCAPTCHA sitekey="6Ld_r1kaAAAAANSdOgIp6TIqL-y7eCsQEW8RnPku" />
 						</div>
 						<div className="inputField">
 							<input type="submit" value="RSVP"/>
