@@ -26,7 +26,6 @@ const RSVP = _ => {
 						method="post"
 						name="WeddingRSVP"
 						data-netlify="true"
-						data-netlify-recaptcha="true"
 						netlify-honeypot="bot-field"
 						action="/"
 					>
