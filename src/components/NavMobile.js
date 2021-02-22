@@ -15,7 +15,7 @@ const NavMobile = _ => {
                 <span className="bar"></span>
                 <span className="bar"></span>
             </div>
-            <div className="Title">Lee & Hope</div>
+            <Link className="Title" to="/">Lee & Hope</Link>
             <div className={`menuList ${menuActive ? "display" : "hidden"}`}>
                 <li>
                     <Link to="/shower">Shower</Link>

@@ -23,7 +23,7 @@ const Shower = _ => {
 				</div>
 				<div className="details">
 					<div className="info">
-						Saturday, April 17
+						Saturday, April 17<sup>th</sup>
 					</div>
 					<div className="info">
 						Central Baptist Church
