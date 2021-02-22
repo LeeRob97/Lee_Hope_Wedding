@@ -24,21 +24,29 @@ const Registry = _ => {
 						online registries here:
 					</div>
 					<div className="registries">
-						<a 
-							className="registry" 
-							href="https://walmart.com" 
+						<a
+							className="registry"
+							href="https://www.amazon.com/wedding/registry/Y11OFLDLTFFS?ref=wr_search_page_result_2"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Walmart
+							Amazon
 						</a>
-						<a 
-							className="registry" 
-							href="https://www.bedbathandbeyond.com/" 
+						<a
+							className="registry"
+							href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549897325?selectedRLVFilters=_recommended/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							Bed Bath & Beyond
+						</a>
+						<a 
+							className="registry" 
+							href="https://www.walmart.com/lists/view-wedding-registry-items?id=c06c4350-1e45-4b4f-9969-7a9f54ac473f"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Walmart
 						</a>
 					</div>
 				</div>

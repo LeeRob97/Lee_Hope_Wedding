@@ -54,6 +54,32 @@
 					@media (max-width: 625px) {
 						font-size: 30px;
 					}
+
+					#mapAddress {
+						transition: 0.4s;
+						font-weight: 700;
+						&:hover {
+							color: @toupe;
+						}
+					}
+
+					.registryLink {
+						padding: 10px 1em;
+						margin: auto;
+						text-indent: 0;
+						cursor: pointer;
+						transition: 0.4s;
+						background-color: @lightBlue;
+						border-radius: .40rem;
+						color: white;
+
+						&:hover,
+						&:active {
+							background-color: @grey;
+							color: white;
+							border: 1px solid transparent;
+						}
+					}
 				}
 			}
 		}
