@@ -52,8 +52,9 @@
 					align-items: center;
 					max-width: 812px;
 					margin: auto;
-					border: 1px solid @grey;
 					padding: 3em 5px;
+					background-color: #bcb1af;
+					border-radius: .40rem;
 
 					.inputField {
 						display: flex;
@@ -66,40 +67,46 @@
 						}
 
 						label {
+							color: white;
+							font-weight: 600;
 							font-size: 25px;
 							margin-bottom: 5px;
 							font-weight: 600;
 						}
 
 						input {
+							font-family: 'Times New Roman';
 							width: 100%;
-							border: 1px solid @grey;
+							border: 1px solid transparent;
 							padding: 5px 0;
 							text-indent: 5px;
 							font-size: 25px;
 							color: @grey;
 							transition: 0.4s;
+							border-radius: .40rem;
 
 							&:active,
 							&:focus {
 								outline: none;
-								border-color: @red;
+								border-color: @lightBlue;
 							}
 						}
 
 						input[type="submit"] {
 							font-family: 'Dancing Script', serif;
-							background-color: inherit;
+							background-color: #b69495;
+							color: white;
 							width: auto;
 							text-align: center;
 							padding: 5px 1em;
 							margin: auto;
 							text-indent: 0;
 							cursor: pointer;
+							border-radius: .40rem;
 
 							&:hover,
 							&:active {
-								background-color: @red;
+								background-color: @grey;
 								color: white;
 								border: 1px solid transparent;
 							}

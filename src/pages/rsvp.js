@@ -14,10 +14,10 @@ const RSVP = _ => {
 			<div className="wrapper">
 				<div className="header">
 					<div className="larger">
-						RSVP 
+						RSVP
 					</div>
 					<div className="smaller">
-						Kindly Reply by June 5th 
+						Please let us know if you will join us at our wedding.
 					</div>
 				</div>
 				<div className="details">
@@ -41,6 +41,10 @@ const RSVP = _ => {
 						<div className="inputField">
 							<label>Number of Guests</label>
 							<input name="Number of Guests" type="number"/>
+						</div>
+						<div className="inputField">
+							<label>Phone Number</label>
+							<input name="phone" type="phone"/>
 						</div>
 						<div className="inputField">
 							<label>Email (To be reached at for any changes)</label>
