@@ -27,7 +27,6 @@ const RSVP = _ => {
 						name="WeddingRSVP"
 						data-netlify="true"
 						netlify-honeypot="bot-field"
-						action="/"
 					>
 						<input type="hidden" name="bot-field" />
 						<input type="hidden" name="form-name" value="WeddingRSVP" />
