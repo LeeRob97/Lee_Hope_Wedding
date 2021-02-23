@@ -19,9 +19,9 @@ const Registry = _ => {
 				</div>
 				<div className="details">
 					<div className="message">
-						Please know that your presence at our wedding is present enough! However,
-						for friends and family who have been asking for gift ideas, we've created some
-						online registries here:
+						Love, laughter, and company is all we could wish for on our
+						special day. However, for friends and family who would like
+						gift ideas, we've created some online registries here:
 					</div>
 					<div className="registries">
 						<a
