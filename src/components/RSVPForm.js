@@ -3,6 +3,8 @@ import {navigate} from "gatsby";
 
 import ReCAPTCHA from "react-google-recaptcha";
 
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
+
 function setMissingFields() {
 	const requiredFields = [
 		"First Name",
@@ -91,7 +93,8 @@ const RSVPForm = _ => {
 				<input id="recaptcha" type="hidden" name="g-recaptcha-response" />
 				<div className="inputField">
 					<ReCAPTCHA
-						sitekey={process.env.SITE_RECAPTCHA_KEY}
+						ref="recaptcha"
+						sitekey={RECAPTCHA_KEY}
 						onChange={setCaptchaToken}
 					/>
 				</div>
