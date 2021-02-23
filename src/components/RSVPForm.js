@@ -57,6 +57,7 @@ const RSVPForm = _ => {
 				method="post"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
+				data-netlify-recaptcha="true"
 				onSubmit={formSubmission}
 			>
 				<input type="hidden" name="bot-field" />
@@ -80,6 +81,9 @@ const RSVPForm = _ => {
 				<div className="inputField">
 					<label>Email (To be reached at for any changes)<sup>*</sup></label>
 					<input name="email" type="email"/>
+				</div>
+				<div className="inputField">
+					<div className="recaptcha" data-netlify-recaptcha="true"></div>
 				</div>
 				<div className="inputField">
 					<input type="submit" value="RSVP"/>
