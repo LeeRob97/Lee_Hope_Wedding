@@ -1,10 +1,5 @@
 import React from 'react';
-
-function encode(data) {
-	return Object.keys(data)
-		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-		.join("&")
-}
+import {navigate} from "gatsby";
 
 function setMissingFields() {
 	const requiredFields = [
@@ -42,13 +37,13 @@ function formSubmission(e) {
 		return;
 	}
 
-	// fetch('/', {
-	// 	method: 'POST',
-	// 	headers: { "Content-Type": "application/x-www-form-urlencoded" },
-	// 	body: new URLSearchParams(formData).toString()
-	// })
-	// 	.then(() => console.log("success"))
-	// 	.catch(error => alert(error))
+	fetch('/', {
+		method: 'POST',
+		headers: { "Content-Type": "application/x-www-form-urlencoded" },
+		body: new URLSearchParams(formData).toString()
+	})
+		.then( _ => navigate("/thankyou/"))
+		.catch( _ => navigate("/error/"))
 }
 
 const RSVPForm = _ => {
@@ -79,7 +74,7 @@ const RSVPForm = _ => {
 				</div>
 				<div className="inputField">
 					<label>Phone Number</label>
-					<input name="phone" type="phone"/>
+					<input name="phone" inputMode="tel" type="phone"/>
 				</div>
 				<div className="inputField">
 					<label>Email (To be reached at for any changes)<sup>*</sup></label>
