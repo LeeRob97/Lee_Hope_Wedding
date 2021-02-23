@@ -46,6 +46,21 @@
 
 			.details {
 				margin-top: 3em;
+				#missingFields {
+					max-width: 812px;
+					margin: auto;
+					font-size: 30px;
+					text-align: center;
+					transition: 0.3s;
+					height: 0;
+					overflow: hidden;
+
+					&.visible {
+						height: auto;
+						padding: 10px 0;
+
+					}
+				}
 				#rsvpForm {
 					display: flex;
 					flex-direction: column;
@@ -72,6 +87,12 @@
 							font-size: 25px;
 							margin-bottom: 5px;
 							font-weight: 600;
+
+							sup {
+								vertical-align: top;
+								margin-left: 0;
+								color: @grey;
+							}
 						}
 
 						input {
@@ -84,6 +105,10 @@
 							color: @grey;
 							transition: 0.4s;
 							border-radius: .40rem;
+
+							&.required {
+								border-color: red;
+							}
 
 							&:active,
 							&:focus {
