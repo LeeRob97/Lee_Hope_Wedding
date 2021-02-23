@@ -1,10 +1,6 @@
 import React from 'react';
 import {navigate} from "gatsby";
 
-import ReCAPTCHA from "react-google-recaptcha";
-
-const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
-
 function setMissingFields() {
 	const requiredFields = [
 		"First Name",
@@ -65,7 +61,6 @@ const RSVPForm = _ => {
 				method="post"
 				data-netlify="true"
 				netlify-honeypot="bot-field"
-				data-netlify-recaptcha="true"
 				onSubmit={formSubmission}
 			>
 				<input type="hidden" name="bot-field" />
@@ -89,13 +84,6 @@ const RSVPForm = _ => {
 				<div className="inputField">
 					<label>Email (To be reached at for any changes)<sup>*</sup></label>
 					<input name="email" type="email"/>
-				</div>
-				<input id="recaptcha" type="hidden" name="g-recaptcha-response" />
-				<div className="inputField">
-					<ReCAPTCHA
-						sitekey={RECAPTCHA_KEY}
-						onChange={setCaptchaToken}
-					/>
 				</div>
 				<div className="inputField">
 					<input type="submit" value="RSVP"/>
