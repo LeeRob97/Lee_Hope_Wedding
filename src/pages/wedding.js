@@ -25,7 +25,7 @@ const Wedding = _ => {
 				</div>
 				<div className="details">
 					<div className="info">06.05.21</div>
-					<div className="info">Comanche Rose Ranch &bull; Nocona, TX &bull; 12 PM, Noon</div>
+					<a className="info map" href="http://maps.google.com/?q=14860 FM 103, Nocona, TX 76255" target="_blank" rel="noopener noreferrer">Comanche Rose Ranch &bull; Nocona, TX &bull; 12 PM, Noon</a>
 				</div>
 			</div>
 		</Layout>

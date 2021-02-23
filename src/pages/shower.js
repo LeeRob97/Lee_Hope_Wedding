@@ -25,6 +25,9 @@ const Shower = _ => {
 					<div className="info">
 						Saturday, April 17<sup>th</sup>
 					</div>
+					<div className="info" style={{fontSize: "35px"}}>
+						2:00 PM
+					</div>
 					<div className="info">
 						Central Baptist Church
 					</div>
