@@ -91,7 +91,7 @@ const RSVPForm = _ => {
 				<input id="recaptcha" type="hidden" name="g-recaptcha-response" />
 				<div className="inputField">
 					<ReCAPTCHA
-						sitekey={SITE_RECAPTCHA_KEY}
+						sitekey={process.env.SITE_RECAPTCHA_KEY}
 						onChange={setCaptchaToken}
 					/>
 				</div>
