@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 
 import Banner from "../components/Banner";
+import RSVPForm from "../components/RSVPForm";
 
 const RSVP = _ => {
 	return (
@@ -21,39 +22,7 @@ const RSVP = _ => {
 					</div>
 				</div>
 				<div className="details">
-					<form
-						id="rsvpForm"
-						method="post"
-						name="WeddingRSVP"
-						data-netlify="true"
-						netlify-honeypot="bot-field"
-					>
-						<input type="hidden" name="bot-field" />
-						<input type="hidden" name="form-name" value="WeddingRSVP" />
-						<div className="inputField">
-							<label>First Name</label>
-							<input name="First Name" type="text"/>
-						</div>
-						<div className="inputField">
-							<label>Last Name</label>
-							<input name="Last Name" type="text"/>
-						</div>
-						<div className="inputField">
-							<label>Number of Guests</label>
-							<input name="Number of Guests" type="number"/>
-						</div>
-						<div className="inputField">
-							<label>Phone Number</label>
-							<input name="phone" type="phone"/>
-						</div>
-						<div className="inputField">
-							<label>Email (To be reached at for any changes)</label>
-							<input name="email" type="email"/>
-						</div>
-						<div className="inputField">
-							<input type="submit" value="RSVP"/>
-						</div>
-					</form>
+					<RSVPForm />
 				</div>
 			</div>
 
