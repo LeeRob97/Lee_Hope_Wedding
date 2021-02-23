@@ -83,7 +83,7 @@ const RSVPForm = _ => {
 					<input name="email" type="email"/>
 				</div>
 				<div className="inputField">
-					<div className="recaptcha" data-netlify-recaptcha="true"></div>
+					<div data-netlify-recaptcha="true"></div>
 				</div>
 				<div className="inputField">
 					<input type="submit" value="RSVP"/>
